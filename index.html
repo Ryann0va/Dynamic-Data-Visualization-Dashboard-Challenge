@@ -1,0 +1,36 @@
+//U99350821
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Data Visualization Dashboard</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main area -->
+    <div class="container">
+        <h1>Dynamic Data Visualization Dashboard</h1>
+        <!-- Dropdowns or sliders -->
+        <div class="filter">
+            <!-- Example dropdown -->
+            <label for="stock-select">Select Stock:</label>
+            <select id="stock-select">
+                <option value="All">All</option>
+                <!-- Add options dynamically based on available stock names -->
+                <!-- Example: <option value="Stock1">Stock 1</option> -->
+            </select>
+            <!-- Example slider -->
+            <label for="date-slider">Select Date Range:</label>
+            <input type="range" id="date-slider" min="0" max="100" value="50">
+            <!-- Add additional filter options as needed -->
+        </div>
+        <!-- SVG container -->
+        <svg id="chart" width="600" height="600"></svg>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="example.js"></script>
+</body>
+</html>
